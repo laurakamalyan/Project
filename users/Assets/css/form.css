@@ -1,0 +1,119 @@
+/* Login, register forms */
+#form {
+    padding: 20px;
+}
+
+#form > .flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+#form .form_img {
+    width: 40%;
+}
+
+#form .form_img img {
+    width: 100%;
+}
+
+#form .form {
+    width: 40%;
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ac687a;
+}
+
+#form .form > p:first-child {
+    color: rgb(134, 130, 130);
+}
+
+#form .form h2 {
+    color: #ac687a;
+    text-align: center;
+}
+
+#form .form .error {
+    margin-bottom: 20px;
+}
+
+#form input:not(#remember) {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.forgot_password {
+    float: right;
+    text-decoration: none;
+    color: #5788D2;
+    font-size: 14px;
+}
+
+.input_password {
+    position: relative;
+}
+
+.show_pass {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(134, 130, 130);
+    font-size: 16px;
+    display: none;
+}
+
+.remember_checkbox {
+    text-align: right;
+}
+
+.remember_checkbox input {
+    cursor: pointer;
+}
+
+#form button {
+    width: 100%;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form p > a {
+    color: #5788D2;
+}
+
+/* Change footer style */
+#form ~ #footer {
+    background-image: none;
+    background-color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 890px) {
+    #form .form_img {
+        display: none;
+    }
+
+    #form .form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #form {
+        padding: 10px;
+    }
+
+    #form .form {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

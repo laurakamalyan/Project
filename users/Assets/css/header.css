@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "fredoka";
+    src: url(../fonts/Fredoka_Condensed-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: fredoka;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar { 
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar > .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul > li {
+    display: inline-block;
+    margin-right: 15px;
+    border-bottom: 3px solid transparent;
+} 
+
+.navbar ul > li > a {
+    font-size: 18px;
+    font-weight: 900;
+    color: #ac687a;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar ul > li:hover > a,
+.active {
+    border-color: #ac687a !important;
+}
+
+.navbar_style_on_scroll {
+    background-color: #fff;
+    box-shadow: 0 0 15px #ac687a;
+}
+
+/* Logo */
+.logo_pic {
+    width: 140px;
+    margin-right: 15px;
+}
+
+/* Toggler icon */
+.toggler_menu {
+    color: #ac687a;
+    font-size: 20px;
+    border: 1px solid #ac687a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 12px;
+    z-index: 3;
+}
+
+/* Responsive */
+@media screen and (max-width: 850px) {
+    .navbar {
+        background-color: #fff;
+    }
+
+    .navbar > .flex-container > .flex-item {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu1 {
+        border-top: 1px solid #ac687a;
+    }
+
+    .toggler_menu {
+        display: block;
+    }
+}
